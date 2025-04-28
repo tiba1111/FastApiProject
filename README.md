@@ -1,5 +1,32 @@
 # FastApiProject
+
+## Description
+
+This is a simple backend application built with **FastAPI** that exposes an HTTPS RESTful **GET** endpoint `/address`. The endpoint returns a JSON object containing an address, where the postcode is dynamically retrieved from environment variables.
+
+### Key Features:
+- **Environment Variables**: Postcode and other address fields are pulled from environment variables using the `.env` file for easy configuration management.
+- **HTTPS Support**: The app is configured to run with HTTPS, ensuring secure communication.
+- **Production-Grade Practices**: Implements best practices including:
+  - Input validation with **Pydantic** models.
+  - Secure app configuration with **dotenv** to handle environment variables.
+  - The app is structured for ease of scalability and deployment in production environments.
+
+## Features
+
+- **Address Retrieval**: Fetches and returns an address (street, city, country, postcode) as JSON.
+- **HTTPS Support**: The app supports secure connections through HTTPS, ensuring data privacy.
+- **Environment Variable Management**: Configuration is handled securely using environment variables in a `.env` file.
+- **Production-Grade Security**: The app can be deployed in production with HTTPS, security headers, and environment-specific configuration.
+
+## Prerequisites
+
+Before running the app, make sure you have the following installed:
+
+- Python 3.7+ (preferably 3.8 or higher)
+- Virtual environment management (optional, but recommended)
 #####
+
 Folder Structure
 FastApiProject/
 ├── main.py                # Main FastAPI app
